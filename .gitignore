@@ -1,0 +1,8 @@
+#Ignore files
+old/
+MNIST/
+logs/
+Cifar10/
+checkpoints_quant/
+__pycache__/
+.ipynb_checkpoints/

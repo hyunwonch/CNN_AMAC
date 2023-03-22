@@ -1,0 +1,1 @@
+./checkpoints_quant/VGGnagaCNN_cifar10/2_22_Time_19_20/checkpoint_2_10.0.tar
