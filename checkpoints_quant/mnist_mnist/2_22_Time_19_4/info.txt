@@ -1,0 +1,21 @@
+arch : mnist 
+Dataset : mnist 
+Batchsize : 256 
+Quantization : 1 
+<bound method Module.parameters of mnist(
+  (conv1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (conv4): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (dropout1): Dropout(p=0.2, inplace=False)
+  (dropout2): Dropout(p=0.3, inplace=False)
+  (dropout3): Dropout(p=0.3, inplace=False)
+  (dropout4): Dropout(p=0.3, inplace=False)
+  (dropout5): Dropout(p=0.3, inplace=False)
+  (fc5): Linear(in_features=1024, out_features=32, bias=True)
+  (fc6): Linear(in_features=32, out_features=10, bias=True)
+)>

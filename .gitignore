@@ -1,8 +1,13 @@
 #Ignore files
+.ipynb_checkpoints/
+__pycache__/
 old/
 MNIST/
-logs/
 Cifar10/
-checkpoints_quant/
-__pycache__/
-.ipynb_checkpoints/
+logs/
+checkpoints_train/
+data_quantized/
+slack.py
+
+CNN_627*/
+VGGnagaCNN_*/

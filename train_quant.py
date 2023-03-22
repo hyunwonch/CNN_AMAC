@@ -24,6 +24,7 @@ from pytz import timezone
 from slacker import Slacker
 
 from quantization import *
+from slack import *
 import warnings
 warnings.simplefilter("ignore")
 
@@ -138,14 +139,6 @@ def lr_schedule_vgg(optimizer, epoch, base_lr=0.01):
 '''
 
 
-
-# Send message through slack
-def slack(msg):
-    slack = Slacker('xoxb-1593476655186-1599647469252-SePgOoxZfsvT2QtG7uOLQzvs')
-    t = ['월','화','수','목','금','토','일']
-    now = datetime.now(timezone('Asia/Seoul'))
-
-    slack.chat.post_message('#ai', msg)
 
 
 # Retrieve pruning masks
