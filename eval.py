@@ -228,7 +228,8 @@ def main():
     else:
         model = nets.CNN_627_large()
 
-    args.pretrained_checkpoint = "./checkpoints_train/VGGnagaCNN_cifar10/2_15_Time_17_50/checkpoint_56_99.9.tar"
+    # args.pretrained_checkpoint = "./checkpoints_train/VGGnagaCNN_cifar10/2_15_Time_17_50/checkpoint_56_99.9.tar"
+    args.pretrained_checkpoint = "./checkpoints_train/mnist_mnist/2_18_Time_16_22/checkpoint_101_99.7.tar"
 
     # load pretrained checkpoint
     pretrained_ckpt = torch.load(args.pretrained_checkpoint)

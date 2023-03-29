@@ -257,21 +257,21 @@ class mnist_quant(nn.Module):
                 init.constant_(m.bias, 0)
     
     def forward(self, x):
-        x = F.relu(quant_signed_15(self.conv1(x)))
+        x = F.relu(quant_signed_05(self.conv1(x)))
         x = self.dropout1(x)
         x = self.pool1(x)
-        x = F.relu(quant_signed_15(self.conv2(x)))
+        x = F.relu(quant_signed_05(self.conv2(x)))
         x = self.dropout2(x)
         x = self.pool2(x)
-        x = F.relu(quant_signed_15(self.conv3(x)))
+        x = F.relu(quant_signed_05(self.conv3(x)))
         x = self.dropout3(x)
         x = self.pool3(x)
-        x = F.relu(quant_signed_15(self.conv4(x)))
+        x = F.relu(quant_signed_05(self.conv4(x)))
         x = self.dropout4(x)
         x = self.pool4(x)
 
         x = x.view(x.size(0), -1)
-        x = F.relu(quant_signed_15(self.fc5(x)))
+        x = F.relu(quant_signed_05(self.fc5(x)))
         x = self.dropout5(x)       
         x = self.fc6(x)
         return x
