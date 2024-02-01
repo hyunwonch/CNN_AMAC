@@ -4,5 +4,5 @@
 - Support configurable dynamic quantization on each layers
 
 ## Command
- python train.py --arch=mnist --dataset=mnist --quant=1
- python eval.py --arch=mnist --dataset=mnist --quant=0
+- python train.py --arch=mnist --dataset=mnist --quant=1
+- python eval.py --arch=mnist --dataset=mnist --quant=0
